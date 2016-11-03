@@ -62,3 +62,29 @@ Hence the previous example is same as
 <TextView android:layout_weight="1"
 </LinearLayout>
 ```
+
+##3. RelativeLayout
+###1 Relative Positioning
+####03:34
+Top is default vertical position, Left is default horizontal position
+
+####05:08 relative to sibling
+```
+android:layout_above
+android:layout_below
+android:layout_toLeftOf
+android:layout_toRightOf
+```
+
+####05:24 relative to parent
+```
+android:layout_centerHorizontal
+android:layout_centerVeritical
+android:layout_centerInParent
+android:layout_alignParentTop
+android:layout_alignParentBottom
+android:layout_alignParentLeft
+android:layout_alignParentRight
+```
+
+###2 Relative Alignment
