@@ -88,3 +88,16 @@ android:layout_alignParentRight
 ```
 
 ###2 Relative Alignment
+####01:42
+```
+android:layout_alignLeft="@id/center"
+```
+one peculair: 
+```
+android:layout_alignBaseline
+```
+###3 Missing Views
+```
+android:layout_toLeftOf="@id/ok"  //if ok does not exist, then
+android:layout_alignWithParentIfMissing="true"  //fallback
+```
