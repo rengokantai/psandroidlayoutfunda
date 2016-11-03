@@ -32,3 +32,33 @@ more than one
 ```
 android:gravity="center_horizontal|bottom"
 ```
+
+##2. LinearLayout
+###2 Gravity
+in horizontal, the `layout_gravity` can only be top and bottom.
+in veritcal, the `layout_gravity` can only be left and right.
+
+
+###3 Weight
+```
+<LinearLayout ....
+<TextView android:layout_width="0dp" android:layout_weight="1" ...
+<TextView android:layout_width="0dp" android:layout_weight="2" ...
+</LinearLayout>
+```
+
+####05:04 Dummy views, center a TextView
+```
+<LinearLayout>
+<View android:layout_weight="1"
+<TextView android:layout_weight="1"
+<View android:layout_weight="1"
+</LinearLayout>
+```
+####06:06 weightSum
+Hence the previous example is same as
+```
+<LinearLayout android:gravity="center_horizontal" android:weightSum="3">
+<TextView android:layout_weight="1"
+</LinearLayout>
+```
