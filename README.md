@@ -190,3 +190,7 @@ explicitly specify columns
 |RelativeLayout|2||
 |FrameLayout|2||
 |TableLayout|2|3 with shrinking and streching|
+
+Few measure passes->better
+
+###2 Hierarchy Viewer
