@@ -152,3 +152,26 @@ Or you cane make a TextView act as a row
  <TextView android:text="@string/header"/>  // this is a row
  ...
 ```
+###3 Shrinking, Stretching and Collapsing
+```
+<TableLayout android:shrinkColumns="*"   //shrink all columns
+```
+```
+<TableLayout android:shrinkColumns="2"   //shrink 3rd column (index=2)
+```
+
+####03:21 strettchColumns
+strech to parent container.
+```
+<TableLayout android:stretchColumns="2"> //stretch third column
+```
+####04:21 collapseColumns
+```
+<TableLayout android:collapseColumns="2"> //only show first 2 columns 
+//remaining columns may engender whitespace  (04:28)
+```
+####05:40
+explicitly specify columns 
+```
+<TableLayout android:collapseColumns="2" strechColumns="0,1,2">
+```
