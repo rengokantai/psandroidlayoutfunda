@@ -101,3 +101,54 @@ android:layout_alignBaseline
 android:layout_toLeftOf="@id/ok"  //if ok does not exist, then
 android:layout_alignWithParentIfMissing="true"  //fallback
 ```
+##4. FrameLayout
+###1 FrameLayout
+####04:46
+```
+<FrameLayout android:foreground="@drawable/frame">
+<ImageView ...android:src="@drawable/cat"/>
+</FrameLayout>
+```
+####06:00 foreGravity  //by default, foreground activity is ` fill`
+```
+<FrameLayout android:foreground="@drawable/frame" android:foregroundGravity="top|left">
+```
+
+##5. TableLayout
+###1 Overview
+```
+width="match_parent"  //default
+//we can define height
+```
+####01:13
+```
+<TableLayout>
+<TableRow>
+  <TextView android:text="@string/one"
+</TableRow>
+<TableRow>
+  <TextView android:text="@string/two"
+</TableRow>
+</TableLayout>
+```
+
+###2 Spanning and Skipping
+####00:40
+by default the column starts at 0,we can set to other column
+```
+<TableRow>
+  <TextView android:text="@string/header" android:layout_column="1" />
+</TableRow>
+```
+columnspan (in android, it called layout_span)
+```
+<TableRow>
+  <TextView android:text="@string/header" android:layout_span="2" />
+</TableRow>
+```
+Or you cane make a TextView act as a row
+```
+</TableLayout>
+ <TextView android:text="@string/header"/>  // this is a row
+ ...
+```
