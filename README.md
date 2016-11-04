@@ -175,3 +175,18 @@ explicitly specify columns
 ```
 <TableLayout android:collapseColumns="2" strechColumns="0,1,2">
 ```
+##6. Choosing the Right Layout39m 21s
+###1 Which Layout to Use?
+####06:36 use up remaining
+```
+<TextView ... android:layout_width="0dp" android:layout_weight="1"/>  //this will occupy remaining space
+<TextView ..../>
+```
+
+####07:37 How many passes
+|Layout|Normal|Extra|
+|---|---|---|
+|LinearLayout| 1| 2 with weight|
+|RelativeLayout|2||
+|FrameLayout|2||
+|TableLayout|2|3 with shrinking and streching|
